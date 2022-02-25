@@ -581,7 +581,6 @@ export class ViewComponent implements OnInit, AfterViewInit {
   }
 
   handleObjectInsertion({ type, object }) {
-    debugger;
     if (type === 'ROOM') {
       this.setRoom(object);
       return;
@@ -590,6 +589,8 @@ export class ViewComponent implements OnInit, AfterViewInit {
     const group = _.createFurniture(type, object, this.DEFAULT_CHAIR);
 
     if (type === 'DOOR' || type === 'WINDOW') {
+
+      debugger;
       group.originX = 'center';
       group.originY = 'top';
 

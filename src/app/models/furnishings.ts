@@ -133,90 +133,90 @@ const FURNISHINGS = {
       'rightChairs': 0
     }
   ],
-  'chairs': [
-    {
-      'title': 'Generic',
-      'width': 18,
-      'height': 20,
-      'lrSpacing': 2,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'rect', 'definition': { left: 0, top: 0, width: 18, height: 20 } },
-        { 'type': 'rect', 'definition': { left: 0, top: 18, width: 18, height: 2 } }
-      ]
-    },
-    {
-      'title': '14" Children\'s',
-      'width': 14,
-      'height': 14,
-      'lrSpacing': 2,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'circle', 'definition': { originX: 'center', originY: 'center', radius: 7 } },
-        { 'type': 'circle', 'definition': { originX: 'center', originY: 'center', radius: 4 } }
-      ]
-    },
-    {
-      'title': '18" Folding',
-      'width': 18,
-      'height': 18,
-      'lrSpacing': 2,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'rect', 'definition': { left: 0, top: 0, width: 18, height: 18 } },
-        { 'type': 'rect', 'definition': { left: 0, top: 16, width: 18, height: 2 } }
-      ]
-    },
-    {
-      'title': '18" Stacking',
-      'width': 18.375,
-      'height': 23.25,
-      'lrSpacing': 2,
-      'tbSpacing': 12.75,
-      'parts': [
-        { 'type': 'rect', 'definition': { width: 18.375, height: 23.25 } },
-        { 'type': 'rect', 'definition': { width: 18.375, height: 4, top: 19.25 } },
-        { 'type': 'rect', 'definition': { width: 18.375, height: 2, top: 21.25 } }
-      ]
-    },
-    {
-      'title': '20" Pew Stacker',
-      'source': 'http://sanctuaryseating.com/church-chairs/impressions-series/model-7027/',
-      'width': 20.25,
-      'height': 26.3,
-      'lrSpacing': 1,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'rect', 'definition': { width: 20.25, height: 26.3 } },
-        { 'type': 'rect', 'definition': { width: 20.25, height: 8, top: 18.3 } },
-        { 'type': 'rect', 'definition': { width: 20.25, height: 6, top: 20.3 } }
-      ]
-    },
-    {
-      'title': '22" Pew Stacker',
-      'source': 'http://sanctuaryseating.com/church-chairs/impressions-series/model-7227/',
-      'width': 22,
-      'height': 26.3,
-      'lrSpacing': 1,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'rect', 'definition': { width: 22, height: 26.3 } },
-        { 'type': 'rect', 'definition': { width: 22, height: 8, top: 18.3 } },
-        { 'type': 'rect', 'definition': { width: 22, height: 6, top: 20.3 } }
-      ]
-    },
-    {
-      'title': '22" Square',
-      'width': 22,
-      'height': 22,
-      'lrSpacing': 2,
-      'tbSpacing': 12,
-      'parts': [
-        { 'type': 'rect', 'definition': { width: 22, height: 22 } },
-        { 'type': 'rect', 'definition': { width: 22, height: 6, top: 16 } }
-      ]
-    }
-  ],
+  // 'chairs': [
+  //   {
+  //     'title': 'Generic',
+  //     'width': 18,
+  //     'height': 20,
+  //     'lrSpacing': 2,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { left: 0, top: 0, width: 18, height: 20 } },
+  //       { 'type': 'rect', 'definition': { left: 0, top: 18, width: 18, height: 2 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '14" Children\'s',
+  //     'width': 14,
+  //     'height': 14,
+  //     'lrSpacing': 2,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'circle', 'definition': { originX: 'center', originY: 'center', radius: 7 } },
+  //       { 'type': 'circle', 'definition': { originX: 'center', originY: 'center', radius: 4 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '18" Folding',
+  //     'width': 18,
+  //     'height': 18,
+  //     'lrSpacing': 2,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { left: 0, top: 0, width: 18, height: 18 } },
+  //       { 'type': 'rect', 'definition': { left: 0, top: 16, width: 18, height: 2 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '18" Stacking',
+  //     'width': 18.375,
+  //     'height': 23.25,
+  //     'lrSpacing': 2,
+  //     'tbSpacing': 12.75,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { width: 18.375, height: 23.25 } },
+  //       { 'type': 'rect', 'definition': { width: 18.375, height: 4, top: 19.25 } },
+  //       { 'type': 'rect', 'definition': { width: 18.375, height: 2, top: 21.25 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '20" Pew Stacker',
+  //     'source': 'http://sanctuaryseating.com/church-chairs/impressions-series/model-7027/',
+  //     'width': 20.25,
+  //     'height': 26.3,
+  //     'lrSpacing': 1,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { width: 20.25, height: 26.3 } },
+  //       { 'type': 'rect', 'definition': { width: 20.25, height: 8, top: 18.3 } },
+  //       { 'type': 'rect', 'definition': { width: 20.25, height: 6, top: 20.3 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '22" Pew Stacker',
+  //     'source': 'http://sanctuaryseating.com/church-chairs/impressions-series/model-7227/',
+  //     'width': 22,
+  //     'height': 26.3,
+  //     'lrSpacing': 1,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { width: 22, height: 26.3 } },
+  //       { 'type': 'rect', 'definition': { width: 22, height: 8, top: 18.3 } },
+  //       { 'type': 'rect', 'definition': { width: 22, height: 6, top: 20.3 } }
+  //     ]
+  //   },
+  //   {
+  //     'title': '22" Square',
+  //     'width': 22,
+  //     'height': 22,
+  //     'lrSpacing': 2,
+  //     'tbSpacing': 12,
+  //     'parts': [
+  //       { 'type': 'rect', 'definition': { width: 22, height: 22 } },
+  //       { 'type': 'rect', 'definition': { width: 22, height: 6, top: 16 } }
+  //     ]
+  //   }
+  // ],
   'miscellaneous': [
     {
       'title': 'Rectangle',
@@ -305,37 +305,44 @@ const FURNISHINGS = {
     }
   ],
   doors: [
+
     {
-      title: 'Narrow Door (28" wide)',
-      parts: [
-        { type: 'rect', definition: { left: 0, width: 28, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
-        { type: 'line', line: [0, 0, 0, `${WT + 28}`], definition: { stroke: 'black', strokeWidth: 1 } },
-        { type: 'path', path: `M 0 ${WT + 28} Q 28, ${WT + 28}, 28, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
-      ]
-    }, {
-      title: 'Normal Door (32" wide)',
-      parts: [
-        { type: 'rect', definition: { left: 0, width: 32, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
-        { type: 'line', line: [0, 0, 0, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
-        { type: 'path', path: `M 0 ${WT + 32} Q 32, ${WT + 32}, 32, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
-      ]
-    }, {
-      title: 'Wide Door (36" wide)',
-      parts: [
-        { type: 'rect', definition: { left: 0, width: 36, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
-        { type: 'line', line: [0, 0, 0, `${WT + 36}`], definition: { stroke: 'black', strokeWidth: 1 } },
-        { type: 'path', path: `M 0 ${WT + 36} Q 36, ${WT + 36}, 36, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
-      ]
-    }, {
-      title: 'Double Doors (64" wide)',
-      parts: [
-        { type: 'rect', definition: { left: 0, width: 64, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
-        { type: 'line', line: [0, 0, 0, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
-        { type: 'path', path: `M 0 ${WT + 32} Q 32, ${WT + 32}, 32, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
-        { type: 'line', line: [64, 0, 64, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
-        { type: 'path', path: `M 32 ${WT} Q 32, ${WT + 32}, 64, ${WT + 32}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
-      ]
+      'width': 50,
+      'height': 50,
+      title: 'Door img',
+      src: './assets/images/door.png'
     }
+    // {
+    //   title: 'Narrow Door (28" wide)',
+    //   parts: [
+    //     { type: 'rect', definition: { left: 0, width: 28, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
+    //     { type: 'line', line: [0, 0, 0, `${WT + 28}`], definition: { stroke: 'black', strokeWidth: 1 } },
+    //     { type: 'path', path: `M 0 ${WT + 28} Q 28, ${WT + 28}, 28, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
+    //   ]
+    // }, {
+    //   title: 'Normal Door (32" wide)',
+    //   parts: [
+    //     { type: 'rect', definition: { left: 0, width: 32, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
+    //     { type: 'line', line: [0, 0, 0, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
+    //     { type: 'path', path: `M 0 ${WT + 32} Q 32, ${WT + 32}, 32, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
+    //   ]
+    // }, {
+    //   title: 'Wide Door (36" wide)',
+    //   parts: [
+    //     { type: 'rect', definition: { left: 0, width: 36, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
+    //     { type: 'line', line: [0, 0, 0, `${WT + 36}`], definition: { stroke: 'black', strokeWidth: 1 } },
+    //     { type: 'path', path: `M 0 ${WT + 36} Q 36, ${WT + 36}, 36, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
+    //   ]
+    // }, {
+    //   title: 'Double Doors (64" wide)',
+    //   parts: [
+    //     { type: 'rect', definition: { left: 0, width: 64, top: 0, height: WT, fill: 'white', strokeWidth: 0, originX: 'left', originY: 'top' } },
+    //     { type: 'line', line: [0, 0, 0, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
+    //     { type: 'path', path: `M 0 ${WT + 32} Q 32, ${WT + 32}, 32, ${WT}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
+    //     { type: 'line', line: [64, 0, 64, `${WT + 32}`], definition: { stroke: 'black', strokeWidth: 1 } },
+    //     { type: 'path', path: `M 32 ${WT} Q 32, ${WT + 32}, 64, ${WT + 32}`, definition: { stroke: '#ddd', strokeWidth: 1, fill: 'transparent' } },
+    //   ]
+    // }
   ],
   windows: [
     {
@@ -363,7 +370,7 @@ const FURNISHINGS = {
       ]
     }
   ],
-  CustomImage: [
+  chairs: [
     {
       'width': 50,
       'height': 50,

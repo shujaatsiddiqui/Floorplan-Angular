@@ -92,22 +92,10 @@ const createFurniture = (type: string, object, chair = {}) => {
     return createText(object);
   } else if (type === 'LAYOUT') {
     return object;
-  }else if (type === 'image') {
-    var imgObj = new Image();
-    imgObj.src = object.src;
-    imgObj.height = object.height;
-    imgObj.width = object.width;
-    var image = new fabric.Image(imgObj);
-    image.set({
-        angle: 0,
-        padding: 0,
-        originX: "center",
-        originY: "center",
-        height: object.height,
-        width: object.width
-    });
+  } else if (type === 'CHAIR' || type === 'DOOR') {
+    var image = CreateImgObject(object, type);
     return image;
-  }  
+  }
   else {
     return createShape(object, RL_STROKE, RL_FILL, type);
   }
@@ -125,6 +113,23 @@ const createShape = (object: any, stroke = RL_CHAIR_STROKE, fill = RL_CHAIR_FILL
 
   return group;
 };
+
+const CreateImgObject = (object: any, type: string): fabric.Image => {
+  var imgObj = new Image();
+  imgObj.src = object.src;
+  var image = new fabric.Image(imgObj);
+  image.set({
+    angle: 0,
+    padding: 0,
+    originX: "center",
+    originY: "center",
+    height: object.height,
+    width: object.width,
+    type: type,
+    name : `${type}:${object.title}`,
+  });
+  return image;
+}
 
 
 // All Create[Name]Object() functions should return a group

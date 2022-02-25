@@ -28,7 +28,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Image
+            Chairs
           </mat-panel-title>
         </mat-expansion-panel-header>
         <!-- <mat-list>
@@ -43,11 +43,11 @@
 
         <mat-divider></mat-divider>
         <div class="preview-layout">
-          <div class="preview-item" *ngFor="let image of furnishings.CustomImage">
-            <div (click)="insert(image, 'image')">
+          <div class="preview-item" *ngFor="let chair of furnishings.chairs">
+            <div (click)="insert(chair, 'CHAIR')">
               <!-- <app-preview-furniture [type]="'image'" [furniture]="image"></app-preview-furniture> -->
-              <img [src]="image.src" />
-              <div class="preview-title">{{image.title}}</div>
+              <img [src]="chair.src" />
+              <div class="preview-title">{{chair.title}}</div>
             </div>
           </div>
         </div>
@@ -64,7 +64,8 @@
         <div class="preview-layout">
           <div class="preview-item" *ngFor="let door of furnishings.doors">
             <div (click)="insert(door, 'DOOR')">
-              <app-preview-furniture [type]="'DOOR'" [furniture]="door"></app-preview-furniture>
+              <!-- <app-preview-furniture [type]="'DOOR'" [furniture]="door"></app-preview-furniture> -->
+              <img [src]="door.src" />
               <div class="preview-title">{{door.title}}</div>
             </div>
           </div>

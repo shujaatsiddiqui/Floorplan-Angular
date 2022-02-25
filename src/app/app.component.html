@@ -31,7 +31,7 @@
             Image
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <mat-list>
+        <!-- <mat-list>
           <mat-divider></mat-divider>
           <ng-container *ngFor="let image of furnishings.CustomImage">
             <mat-list-item (click)="insert(image, 'image')">
@@ -39,7 +39,19 @@
             </mat-list-item>
             <mat-divider></mat-divider>
           </ng-container>
-        </mat-list>
+        </mat-list> -->
+
+        <mat-divider></mat-divider>
+        <div class="preview-layout">
+          <div class="preview-item" *ngFor="let image of furnishings.CustomImage">
+            <div (click)="insert(image, 'image')">
+              <!-- <app-preview-furniture [type]="'image'" [furniture]="image"></app-preview-furniture> -->
+              <img [src]="image.src" />
+              <div class="preview-title">{{image.title}}</div>
+            </div>
+          </div>
+        </div>
+
       </mat-expansion-panel>
 
       <mat-expansion-panel>

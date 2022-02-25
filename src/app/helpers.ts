@@ -85,6 +85,7 @@ const createBasicShape = (part: any, stroke: string = '#aaaaaa', fill: string = 
 
 
 const createFurniture = (type: string, object, chair = {}) => {
+  debugger;
   if (type === 'TABLE') {
     return createTable(object, chair);
   } else if (type === 'TEXT') {
@@ -93,7 +94,7 @@ const createFurniture = (type: string, object, chair = {}) => {
     return object;
   }else if (type === 'image') {
     var imgObj = new Image();
-    imgObj.src = object.title;
+    imgObj.src = object.src;
     imgObj.height = object.height;
     imgObj.width = object.width;
     var image = new fabric.Image(imgObj);

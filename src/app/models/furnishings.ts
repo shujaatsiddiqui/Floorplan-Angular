@@ -365,9 +365,10 @@ const FURNISHINGS = {
   ],
   CustomImage: [
     {
-      'width': 400,
-      'height': 400,
-      title: 'http://fabricjs.com/lib/pug.jpg',
+      'width': 50,
+      'height': 50,
+      title: 'Gym Chair',
+      src: './assets/images/chair.png'
     }
   ]
 };

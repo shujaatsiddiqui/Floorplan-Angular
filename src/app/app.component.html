@@ -43,7 +43,7 @@
 
         <mat-divider></mat-divider>
         <div class="preview-layout">
-          <div class="preview-item" *ngFor="let chair of furnishings.chairs">
+          <div class="preview-item" *ngFor="let chair of furnishings.spots">
             <div (click)="insert(chair, 'CHAIR')">
               <!-- <app-preview-furniture [type]="'image'" [furniture]="image"></app-preview-furniture> -->
               <img [src]="chair.src" />
@@ -63,9 +63,8 @@
         <mat-divider></mat-divider>
         <div class="preview-layout">
           <div class="preview-item" *ngFor="let door of furnishings.doors">
-            <div (click)="insert(door, 'DOOR')">
-              <!-- <app-preview-furniture [type]="'DOOR'" [furniture]="door"></app-preview-furniture> -->
-              <img [src]="door.src" />
+            <div >
+              <img [src]="door.src" (click)="insert(door, 'DOOR')" />
               <div class="preview-title">{{door.title}}</div>
             </div>
           </div>
